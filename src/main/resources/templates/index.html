@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Generateur de Mot de Passe</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Lien vers le fichier CSS, si nécessaire -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 <form th:action="@{/generate}" method="post">
+    <div class="génération">
     <label for="taille">Longueur du mot de passe:</label>
     <input type="number" id="taille" name="taille" min="1" max="100" required>
-    <input type="submit" value="gGenerer">
+    <input type="submit" value="Génerer">
+    </div>
 </form>
+
 </body>
 </html>

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Mot de passe généré</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-
+<h1>Mot de passe généré</h1>
+<p th:text="${password}"></p>
+<a th:href="@{/}">générer un autre mot de passe</a>
 </body>
 </html>
